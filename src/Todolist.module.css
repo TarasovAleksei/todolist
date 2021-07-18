@@ -1,0 +1,158 @@
+.styleForInput {
+    width: 200px;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+.styleForInputError {
+    width: 200px;
+    border: 2px solid #e52020;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+.styleForInput:focus {
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+.btnAdd {
+    margin-left: 5px;
+    text-align: center;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 700;
+    background: #eaeef1;
+    height: 35px;
+    width: 60px;
+    border-radius: 3px;
+    color: rgba(0, 0, 0, .6);
+    text-shadow: 0 1px 1px #aaa;
+    cursor: pointer;
+}
+
+.btnAdd:hover {
+    background: #fff;
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+.containerForError {
+    width: 200px;
+    height: 25px;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+.activeFilterBtn {
+    text-align: center;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 700;
+    background-color: dodgerBlue;
+    height: 25px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.unActiveFilterBtn {
+    text-align: center;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 700;
+    background: #eaeef1;
+    height: 25px;
+    border: none;
+    border-radius: 3px;
+    color: rgba(0, 0, 0, .6);
+    cursor: pointer;
+}
+
+.activeFilterBtn:not(:first-child), .unActiveFilterBtn:not(:first-child) {
+    margin-left: 20px;
+}
+
+.containerForTasks {
+    margin-top: 10px;
+}
+
+.containerForTask {
+    display: flex;
+}
+
+.inputCheckbox {
+    border-radius: 4px;
+    border: 1px solid #d6d6cd;
+    appearance: none;
+    width: 18px;
+    height: 19px;
+    cursor: pointer;
+    position: relative;
+}
+
+.inputCheckbox::before {
+    content: "✔";
+    color: dodgerBlue;
+    font-size: 18px;
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    opacity: 0;
+    transition: .1s ease-in;
+}
+
+.inputCheckbox:checked::before {
+    opacity: 1;
+}
+
+.labelCheckbox {
+    font-size: 18px;
+    margin-left: 20px;
+    cursor: pointer;
+    width: 195px;
+}
+
+.labelCheckboxIsDone {
+    opacity: 0.5;
+    font-size: 18px;
+    margin-left: 20px;
+    cursor: pointer;
+    width: 195px;
+}
+
+.btnDel {
+    border: 1px solid #efefef;
+    font-size: 9px;
+    text-decoration: none;
+    background: #efefef;
+    font-weight: 700;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, .6);
+    text-shadow: 0 1px 1px #aaa;
+    cursor: pointer;
+}
+
+.btnDel:hover {
+    background: #fff;
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+
